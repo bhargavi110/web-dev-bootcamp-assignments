@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+     <title>Registration Page</title> 
+          <style> td{ color: red; } </style>
+         </head>
+            <body> 
+              <fieldset> <legend>Details</legend>
+              <label for="name"> Name: </label>
+              <input type="text" id="name" placeholder="Enter Name" required> <br><br>
+             <label for="ano">Aadhaar No: </label> 
+            <input type="text" id="ano" name="ano" placeholder="Enter Aadhaar No" required> <br/><br/>
+            <label><b>Address: </b></label> <br/>
+           <textarea id="address" rows="6" cols="70"> </textarea> <br/><br/> <br/><br/>
+           <button onclick="readData()">Submit</button> 
+          </fieldset>
+                   <table border="1">
+                   <tr> 
+                     <th>Name</th> <th>Aadhaar No<th>Address</th>
+                   </tr> 
+                    <tr>
+                    <td id="123"></td> <td id="456"></td> <td id="abc"></td>
+                   </tr> </table> <p id="result"></p> <script> function readData() 
+                    { 
+                    var name=document.getElementById('name').value;
+                   var ano=document.getElementById('ano').value;
+                   var address=document.getElementById('address').value;
+                   document.getElementById('123').innerHTML=name; 
+                   document.getElementById('456').innerHTML=ano; 
+                   document.getElementById('abc').innerHTML=address;
+                   }
+          </script> 
+          </body>
+</html>
+
